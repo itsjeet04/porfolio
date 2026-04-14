@@ -16,13 +16,6 @@ npm run dev
 npm run build && npm start
 ```
 
-## Sections
-- **Hero** — Name, roles, status badge, resume download, social links
-- **About** — Bio, quick-fact cards (LeetCode, Hackathon, NSS, Samsung AI)
-- **Skills** — Grouped by Frontend / Backend / Databases / Data & AI / Tools
-- **Projects** — Edemy LMS (featured), next-auth, BPIT Dept. Website
-- **Experience** — NSS PR Head, Samsung Innovation Campus AI cert, B.Tech
-- **Contact** — Email, LinkedIn, GitHub, LeetCode
 
 ## Resume
 Place your resume PDF at `/public/resume.pdf` for the download button to work.
