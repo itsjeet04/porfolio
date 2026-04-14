@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { event } from "../lib/gtag.js";
 
 const ROLES = ["SDE Intern", "Frontend Intern", "Full Stack Intern", "Data Analytics"];
 
@@ -47,21 +48,28 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* Bio */}
+
       <p data-reveal className="text-base text-subtle leading-relaxed max-w-lg mb-10">
         I build full-stack web applications and care about clean code, good UX,
         and shipping products that work. Currently exploring data analytics
         alongside my core stack.
       </p>
 
-      {/* CTAs */}
+
       <div data-reveal className="flex flex-wrap items-center gap-3">
         <a
           href="/resume.pdf"
           download
+           onClick={() =>
+          event({
+            action: "resume_download",
+            category: "engagement",
+            label: "Hero Section Resume",
+          })
+          }
           className="inline-flex items-center gap-2 text-sm font-medium bg-accent text-bg px-5 py-2.5 rounded-md hover:bg-accent/90 transition-colors"
         >
-          {/* Download icon */}
+       
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>

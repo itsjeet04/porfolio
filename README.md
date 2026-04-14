@@ -23,7 +23,7 @@ Place your resume PDF at `/public/resume.pdf` for the download button to work.
 ## Customization
 - Colors → `tailwind.config.js` under `colors`
 - Fonts  → `app/globals.css` `@import` + `tailwind.config.js` fontFamily
-- Content → edit individual component files in `/components`
+- Google Analytics -> for resume dowloads 
 
 ## Stack
 - Next.js 14 (App Router)  
